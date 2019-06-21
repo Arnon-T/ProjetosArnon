@@ -3,18 +3,17 @@ package orientacao_a_objetos;
 public class TesteCliente {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+					
+		Cliente clienteteste1 = new Cliente();		
+		Cliente clienteteste2 = new Cliente();
 		
-		String nome1 = "Arnon";
-		int codigo1 = 02;
-		String nome2 = "João";
-		int codigo2 = 03;
+		clienteteste1.nomecliente = "Cliente 1";
+		clienteteste2.nomecliente = "Cliente 2";
+		clienteteste1.codigocliente = 11;
+		clienteteste2.codigocliente = 22;
 		
-		Cliente novo1 = new Cliente(nome1, codigo1);		
-		Cliente novo2 = new Cliente (nome2, codigo2);
-		
-		System.out.println(novo1.cliente + "\n" + novo1.codigo);
-		System.out.println(novo2.cliente + "\n" + novo2.codigo);
+		System.out.printf("Nome do cliente %s. Código do cliente %s. \n",   clienteteste1.nomecliente, clienteteste1.codigocliente); //Teste Classe Cliente
+		System.out.printf("Nome do cliente %s. Código do cliente %s. \n",   clienteteste2.nomecliente, clienteteste2.codigocliente); //Teste Classe Cliente
 		
 	}
 

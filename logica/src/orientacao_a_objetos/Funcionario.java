@@ -3,11 +3,15 @@ package orientacao_a_objetos;
 public class Funcionario {
 	
 	String nome;
-	double salario;
+	double salario;	
 	
-	Funcionario(String nome, double salario){
-		this.nome = nome;
-		this.salario = salario;
+	public void aumento(double aumento) {
+		this.salario += aumento;
+	}
+	
+	public String consultar(){
+		String dados =  "Nome do funcionário: " + this.nome + " . Salário: R$" + this.salario;
+		return dados;
 	}
 	
 }

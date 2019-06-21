@@ -3,22 +3,50 @@ package orientacao_a_objetos;
 public class TesteConta {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
+		  	Utilizei esta classe para:
+		  	Testar os atributos da Classe Conta; e 
+		  	Testar a conexão entre a Classe Conta e a Classe Agencia
+		*/
 		
-		int numerocc1 = 10000001;
-		double saldo1 = 999.50;
-		//double limite1 = 333.33;  	Comentado para adequar à questão seguinte.
-
-		int numerocc2 = 10000002;
-		double saldo2 = 888.30;
-		//double limite2 = 777.70; 		Comentado para adequar à questão seguinte.
+		Agencia ag1 = new Agencia();
+		Agencia ag2 = new Agencia();
 		
+		Conta cc1 = new Conta();
+		Conta cc2 = new Conta();
 		
-		Conta cc1 = new Conta(numerocc1, saldo1);
-		Conta cc2 = new Conta(numerocc2, saldo2);	
+		cc1.agencia = ag1; // Teste conexão Classe Conta e Classe Agencia
+		cc2.agencia = ag2; // Teste conexão Classe Conta e Classe Agencia
 		
-		System.out.println(cc1.limite + " " + cc1.saldo + " " + cc1.numerocc);
-		System.out.println(cc2.limite + " " + cc2.saldo + " " + cc2.numerocc);
+		cc1.numerocc = 1001;
+		cc1.agencia.numeroag = 101;
+		//cc1.limite = 200     Comentado para adequar limite ao valor fixado pelo exercício (100).
+		cc1.saldo = 10000.0;		
+		cc2.numerocc = 2002;
+		cc2.agencia.numeroag = 202;
+		//cc2.limite = 200     Comentado para adequar limite ao valor fixado pelo exercício (100).
+		cc2.saldo = 20000.0;
+		
+		System.out.printf("Conta número: %d. Agência: %d Limite: R$%f. Saldo: R$%f. \n", cc1.numerocc, cc1.agencia.numeroag, cc1.limite, cc1.saldo);
+		System.out.printf("Conta número: %d. Agência: %d Limite: R$%f. Saldo: R$%f. \n", cc2.numerocc, cc2.agencia.numeroag, cc2.limite, cc2.saldo);
+		
+		// Teste de métodos.
+		
+		cc1.deposito(1000.0); 	// Método de depósito.
+		cc1.saque(1.0); 		// Método de saque.
+		cc1.imprimeExtrato(); 	// Método de impressão Extrato (Saldo).
+		cc1.getSaldo(); 		// Método de Saldo Disponível (Saldo + Limite).
+		
+		cc2.deposito(1000.0); 	// Método de depósito.
+		cc2.saque(1.0); 		// Método de saque.
+		cc2.imprimeExtrato(); 	// Método de impressão Extrato (Saldo).
+		cc2.getSaldo(); 		// Método de Saldo Disponível (Saldo + Limite).
+		
+		// Demonstra funções realizadas pelos métodos.
+		
+		System.out.printf("Conta número: %d. Agência: %d Limite: R$%f. Saldo: R$%f. \n", cc1.numerocc, cc1.agencia.numeroag, cc1.limite, cc1.saldo);
+		System.out.printf("Conta número: %d. Agência: %d Limite: R$%f. Saldo: R$%f. \n", cc2.numerocc, cc2.agencia.numeroag, cc2.limite, cc2.saldo);
+		
 		
 		
 	}

@@ -3,15 +3,15 @@ package orientacao_a_objetos;
 public class TesteAgencia {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+						
+		Agencia testeag1 = new Agencia();
+		Agencia testeag2 = new Agencia();
 		
-		int numeroag1 = 101;
-		int numeroag2 = 102;
+		testeag1.numeroag = 11011;
+		testeag2.numeroag = 22022;
 		
-		Agencia ag1 = new Agencia(numeroag1);
-		Agencia ag2 = new Agencia(numeroag2);
-		
-		System.out.println(ag1.numeroag + "\n" + ag2.numeroag);
+		System.out.printf("Número Ag.: %d.\n", testeag1.numeroag);
+		System.out.printf("Número Ag.: %d.\n", testeag2.numeroag);		
 		
 	}
 

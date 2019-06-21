@@ -4,11 +4,23 @@ public class Conta {
 	
 	int numerocc;
 	double saldo;
-	double limite = 100;
+	double limite = 100.0;
+	public Agencia agencia;
 	
-	Conta (int numerocc, double saldo){
-		this.numerocc = numerocc;
-		this.saldo = saldo;		
+	public void deposito(double valordeposito) {
+		this.saldo += valordeposito;
+	}
+	
+	public void saque(double valorsaque) {
+		this.saldo -= valorsaque;
+	}
+	
+	public void imprimeExtrato() {
+		System.out.printf("Seu saldo é de R$%f.\n", this.saldo); // Método void utilizado apenas para impressão formatada de extrato de conta (saldo atual sem limite de crédito).
+	}
+	
+	public double getSaldo() {
+		return this.saldo + this.limite; // O Saldo disponível inclui o valor do limite de crédito do cliente.
 	}
 	
 }
