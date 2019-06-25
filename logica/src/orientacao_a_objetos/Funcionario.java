@@ -3,7 +3,7 @@ package orientacao_a_objetos;
 public class Funcionario {
 	
 	String nome;
-	double salario;	
+	double salario = 1000.00;	
 	
 	public void aumento(double aumento) {
 		this.salario += aumento;

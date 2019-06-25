@@ -12,9 +12,9 @@ public class TesteFuncionario {
 		Funcionario funcionario2 = new Funcionario();
 		
 		funcionario1.nome = "Funcionário 1";
-		funcionario1.salario = 1000.0;
+		//funcionario1.salario = 1000.0;
 		funcionario2.nome = "Funcionário 2";
-		funcionario2.salario = 2000.0;
+		//funcionario2.salario = 2000.0;
 		
 		System.out.printf("Nome do funcionário: %s. Salário do funcionário: %f. \n", funcionario1.nome, funcionario1.salario); // Teste Classe Funcionário
 		System.out.printf("Nome do funcionário: %s. Salário do funcionário: %f. \n", funcionario2.nome, funcionario2.salario); // Teste Classe Funcionário
