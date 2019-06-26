@@ -7,13 +7,10 @@ public class Conta {
 	double limite = 100.0;
 	public Agencia agencia;
 	
-<<<<<<< HEAD
-=======
 	Conta(Agencia agencia){
 		this.agencia = agencia;
 	}
 	
->>>>>>> ContinuaProjeto
 	public void deposito(double valordeposito) {
 		this.saldo += valordeposito;
 	}
@@ -30,12 +27,8 @@ public class Conta {
 		return this.saldo + this.limite; // O Saldo disponível inclui o valor do limite de crédito do cliente.
 	}
 	
-<<<<<<< HEAD
-=======
 	public void transfere(Conta origem, Conta destino, double valor) {
 		origem.saldo -= valor;
 		destino.saldo += valor;
-	}
-	
->>>>>>> ContinuaProjeto
+	}	
 }

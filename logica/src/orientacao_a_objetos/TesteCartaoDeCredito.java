@@ -12,28 +12,12 @@ public class TesteCartaoDeCredito {
 		Cliente cliente1 = new Cliente();
 		Cliente cliente2 = new Cliente();
 		
-<<<<<<< HEAD
-		CartaoDeCredito cartao1 = new CartaoDeCredito(); //Teste Classe CartaoDeCredito
-		CartaoDeCredito cartao2 = new CartaoDeCredito(); //Teste Classe CartaoDeCredito
-=======
 		CartaoDeCredito cartao1 = new CartaoDeCredito(111111); //Teste Classe CartaoDeCredito
 		CartaoDeCredito cartao2 = new CartaoDeCredito(222222); //Teste Classe CartaoDeCredito
->>>>>>> ContinuaProjeto
 		
 		cartao1.cliente = cliente1; // Teste conexão Classe CartaoDeCredito e Classe Cliente.
 		cartao2.cliente = cliente2; // Teste conexão Classe CartaoDeCredito e Classe Cliente.
 		
-<<<<<<< HEAD
-		cartao1.numero = 11111111;
-		cartao2.numero = 22222222;
-		cartao1.anovalidade = 2021;
-		cartao2.anovalidade = 2022;
-		cartao1.cliente.codigocliente = 11;
-		cartao2.cliente.codigocliente = 22;
-		
-		System.out.printf("Cartão %d, validade %d, código cliente %d." + "\n", cartao1.numero, cartao1.anovalidade, cartao1.cliente.codigocliente); //Teste output conexão entre Classe Cliente e Classe Cartao de Crédito
-		System.out.printf("Cartão %d, validade %d, código cliente %d." + "\n", cartao2.numero, cartao2.anovalidade, cartao2.cliente.codigocliente); //Teste output conexão entre Classe Cliente e Classe Cartao de Crédito
-=======
 		//cartao1.numero = 11111111;
 		//cartao2.numero = 22222222;
 		cartao1.anoValidade = 2021;
@@ -42,9 +26,7 @@ public class TesteCartaoDeCredito {
 		cartao2.cliente.codigocliente = 22;
 		
 		System.out.printf("Cartão %d, validade %d, código cliente %d." + "\n", cartao1.numero, cartao1.anoValidade, cartao1.cliente.codigocliente); //Teste output conexão entre Classe Cliente e Classe Cartao de Crédito
-		System.out.printf("Cartão %d, validade %d, código cliente %d." + "\n", cartao2.numero, cartao2.anoValidade, cartao2.cliente.codigocliente); //Teste output conexão entre Classe Cliente e Classe Cartao de Crédito
->>>>>>> ContinuaProjeto
-				
+		System.out.printf("Cartão %d, validade %d, código cliente %d." + "\n", cartao2.numero, cartao2.anoValidade, cartao2.cliente.codigocliente); //Teste output conexão entre Classe Cliente e Classe Cartao de Crédito	
 	}
 
 }
