@@ -5,12 +5,12 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\ProjetoArnon\logica"/>
+			<item value="C:\git\logica"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
 	</section>
-	<section name="NewWizardAction">
+	<section name="BasicNewProjectResourceWizard">
 	</section>
 </section>
