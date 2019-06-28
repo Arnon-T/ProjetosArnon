@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <session version="1.0">
-<refactoring accessors="true" comment="Delete 2 elements from project &apos;logica&apos;&#x0D;&#x0A;- Original project: &apos;logica&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     orientacao_a_objetos.t1.java&#x0D;&#x0A;     orientacao_a_objetos.teste.java" description="Delete elements" element1="/src&lt;orientacao_a_objetos{t1.java" element2="/src&lt;orientacao_a_objetos{teste.java" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1561416869418" subPackages="false" version="1.0"/>
+<refactoring comment="Copy package &apos;br.com.util&apos; to &apos;ArnonEErick/src&apos;&#x0D;&#x0A;- Original project: &apos;Logica&apos;&#x0D;&#x0A;- Destination element: &apos;ArnonEErick/src&apos;&#x0D;&#x0A;- Original element: &apos;Logica/src/br.com.util&apos;" description="Copy package" destination="=ArnonEErick/src" element1="/src&lt;br.com.util" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1561671425745" version="1.0"/>
 </session>

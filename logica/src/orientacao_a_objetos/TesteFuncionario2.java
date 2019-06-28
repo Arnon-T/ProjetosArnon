@@ -1,58 +1,34 @@
 package orientacao_a_objetos;
 
-import java.util.ArrayList;
-
 import br.com.util.Teclado;
 
 public class TesteFuncionario2 {
 
 	public static void main(String[] args) {
-		
-		/* 
+		// TODO Auto-generated method stub
+
+		/*
 		 * Crie uma classe chamada TesteFuncionario2. Dentro dessa classe, crie um objeto do tipo Funcionario.
-		 *  Receba do teclado o valor para o atributo nome. Depois crie um laço que permita que o usuário possa alterar o nome
-		 *   e o salário dos funcionários e também visualizar os dados atuais.
+		 * Receba do teclado o valor para o atributo nome. Depois crie um laço que permita que o usuário possa alterar o 
+		 * nome e o salário dos funcionários e
+		 *  também visualizar os dados atuais.
 		 */
+		String finaliza = "s";
+		Funcionario func1 = new Funcionario();
 		
-		ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
-		boolean sair = false;
+		func1.nome = Teclado.lerTexto("Digite o nome do funcionário: ");
+		func1.salario = Teclado.lerDouble("Digite o salário do funcionário: ");
+		System.out.println("Nome: " + func1.nome);
+		System.out.println("Salário: " + func1.salario);
+		finaliza = Teclado.lerTexto("Alterar? (s/n)");
 		
-		while (sair == false) {
-			int operacao = Teclado.lerInt("Selecione uma operação. \n (1)Cadastrar novo funcionário; \n (2)Alterar cadastro de funcionário; \n (3) Listar funcionários cadastrados; \n (4)Sair. \n");
-						
-			if (operacao == 1) {
-				Funcionario funcionario = new Funcionario();
-				System.out.println("Cadastro de novo funcionário. \n");
-				funcionario.nome = Teclado.lerTexto("Digite o nome do funcionário: ");
-				funcionario.salario = Teclado.lerDouble("Digite o salário do funcionário: ");
-				funcionarios.add(funcionario);	
-			}
-			else if (operacao == 2) {	
-				System.out.println("Alteração de cadastro de funcionário. \n");
-				int somaFunc = funcionarios.size();
-				System.out.println("Selecione um número de funcionário de 1 a " + somaFunc);
-				int codigoFunc = Teclado.lerInt("Selecione o código do funcionário.");
-					if (codigoFunc >= 0 && codigoFunc <= somaFunc){
-						funcionarios.get(codigoFunc).nome = Teclado.lerTexto("Digite o novo nome do funcionário " + codigoFunc + ".");
-						funcionarios.get(codigoFunc).salario = Teclado.lerDouble("Digite o novo salário do funcionário " + codigoFunc + ".");
-					}
-					else {
-						System.out.println("Selecione um código de funcionário válido.");
-					}
-			} 
-			else if (operacao == 3) {
-				System.out.println("Lista de funcionários cadastrados + salários. \n");
-				for (Funcionario todosFunc : funcionarios) {
-					System.out.println(todosFunc.consultar() + "\n");				
-				}			
-			}
-			else if (operacao == 4) {
-				System.out.println("Encerrando programa.");
-				sair = true;
-			}
-			else {
-				System.out.println("Digite uma operação válida.");
-			}
+		while (finaliza == "s") {
+			func1.nome = Teclado.lerTexto("Digite o nome do funcionário: ");
+			func1.salario = Teclado.lerDouble("Digite o salário do funcionário: ");
+			finaliza = Teclado.lerTexto("Alterar novamente? (s/n)");	
+			System.out.println("Nome: " + func1.nome);
+			System.out.println("Salário: " + func1.salario);
 		}
 	}
+
 }
