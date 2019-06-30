@@ -1,7 +1,5 @@
 package questoes;
 
-import br.com.util.Teclado;
-
 public class Questao42 {
 
 	public static void main(String[] args) {

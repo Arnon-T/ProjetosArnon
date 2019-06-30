@@ -10,6 +10,18 @@ public class Questao38 {
 			System.out.println(potencia1);
 		}
 		
+		System.out.println("\nSem Math.Pow:\n");
+		
+		double resultado = 1.0;
+		
+		for (int i = 0; i <= 15; i++) {
+			if (i == 0) {
+				System.out.println(resultado);
+			}
+			else {
+				resultado = resultado * 3;
+				System.out.println(resultado);	
+			}
+		}
 	}
-	
 }
